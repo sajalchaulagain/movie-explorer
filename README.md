@@ -63,6 +63,19 @@ Build for production:
 npm run build
 ```
 
+## Netlify deployment
+
+The local `.env` file is ignored by Git, so Netlify cannot read it automatically.
+In Netlify, open **Project configuration → Environment variables** and add:
+
+```env
+VITE_OMDB_API_KEY=your_omdb_api_key_here
+```
+
+Apply the variable to the build environment, then trigger **Deploy site** or
+start a new deploy. Netlify must rebuild the site because Vite includes
+`VITE_*` variables during the build.
+
 ## Main data flow
 
 ```txt
