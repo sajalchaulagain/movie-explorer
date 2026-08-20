@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@layer base {
+	body {
+		margin: 0;
+		background: #020617;
+		color: #f8fafc;
+		font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+	}
+
+	button,
+	input {
+		font: inherit;
+	}
+}
