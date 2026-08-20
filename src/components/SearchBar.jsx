@@ -33,7 +33,7 @@ function SearchBar({ onSearch }) {
                     type="text"
                     value={search}
                     onChange={(event) => setSearch(event.target.value)}
-                    placeholder="Search by movie title"
+                    placeholder="Search by movie title e.g. 365 Days"
                     className="w-full rounded-md border border-slate-700 bg-slate-950 px-4 py-3 text-slate-100 outline-none transition placeholder:text-slate-500 focus:border-amber-400 focus:ring-1 focus:ring-amber-400"
                 />
 
